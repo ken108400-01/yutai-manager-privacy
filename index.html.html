@@ -1,0 +1,324 @@
+<title>株主優待マネージャー プライバシーポリシー</title>
+<style>
+  :root {
+    --bg: #faf7f0;
+    --surface: #ffffff;
+    --text: #1d1a12;
+    --text-muted: #6f6754;
+    --border: #e9e1cc;
+    --accent: #e8ab00;
+    --accent-ink: #4a3600;
+    --serif: "Shippori Mincho", "Hiragino Mincho ProN", serif;
+    --sans: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16140d;
+      --surface: #201d14;
+      --text: #f1ead9;
+      --text-muted: #b3a98f;
+      --border: #3a3423;
+      --accent: #f2c14e;
+      --accent-ink: #2a1e00;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16140d;
+    --surface: #201d14;
+    --text: #f1ead9;
+    --text-muted: #b3a98f;
+    --border: #3a3423;
+    --accent: #f2c14e;
+    --accent-ink: #2a1e00;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.9;
+    padding-inline: 20px;
+    padding-block: 40px;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .doc-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .doc-header .mark {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+  .doc-header .app-name {
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(26px, 5vw, 34px);
+    line-height: 1.4;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .subline {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .ticket-rule {
+    position: relative;
+    height: 1px;
+    background: repeating-linear-gradient(
+      to right,
+      var(--border) 0 8px,
+      transparent 8px 14px
+    );
+    margin: 34px 0;
+  }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .lede strong { color: var(--accent-ink); background: var(--accent); padding: 0 4px; border-radius: 4px; }
+  :root[data-theme="dark"] .lede strong,
+  @media (prefers-color-scheme: dark) { }
+
+  nav.toc {
+    margin: 30px 0 10px;
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+  }
+  nav.toc p {
+    margin: 0 0 10px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 1.2em;
+    columns: 1;
+    font-size: 14.5px;
+  }
+  nav.toc li { margin-bottom: 6px; }
+  nav.toc a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+  nav.toc a:hover { border-bottom-color: var(--accent); }
+
+  section {
+    padding: 34px 0;
+    border-bottom: 1px solid var(--border);
+    scroll-margin-top: 20px;
+  }
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 14px;
+  }
+  h2 .num {
+    font-size: 13px;
+    color: var(--accent-ink);
+    background: var(--accent);
+    border-radius: 999px;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    font-family: var(--sans);
+    font-weight: 700;
+  }
+
+  p { margin: 0 0 14px; font-size: 15px; }
+  ul { margin: 0 0 14px; padding-left: 1.3em; font-size: 15px; }
+  li { margin-bottom: 6px; }
+  .muted { color: var(--text-muted); font-size: 13.5px; }
+
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 4px;
+  }
+  .badge {
+    font-size: 12.5px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    background: var(--surface);
+  }
+
+  footer {
+    padding-top: 30px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  footer .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    color: var(--text);
+    font-size: 14.5px;
+  }
+
+  a { color: var(--accent-ink); }
+  :root:not([data-theme="light"]) a { color: var(--accent); }
+  @media (max-width: 480px) {
+    body { padding-inline: 16px; }
+  }
+</style>
+
+<main>
+  <div class="doc-header">
+    <div class="mark">優待</div>
+    <div class="app-name">株主優待マネージャー</div>
+  </div>
+
+  <h1>プライバシーポリシー</h1>
+  <p class="subline">最終更新日:2026年9月19日</p>
+
+  <div class="lede">
+    結論から先にお伝えします。「株主優待マネージャー」は通信機能を持たないオフラインアプリです。<strong>利用者の情報を外部のサーバーへ送信・収集することは一切ありません。</strong>
+  </div>
+
+  <div class="badge-row">
+    <span class="badge">広告なし</span>
+    <span class="badge">アクセス解析なし</span>
+    <span class="badge">アカウント登録不要</span>
+    <span class="badge">通信機能なし</span>
+    <span class="badge">第三者提供なし</span>
+  </div>
+
+  <nav class="toc" aria-label="目次">
+    <p>目次</p>
+    <ol>
+      <li><a href="#intro">はじめに</a></li>
+      <li><a href="#collect">収集する情報について</a></li>
+      <li><a href="#store">端末内に保存される情報</a></li>
+      <li><a href="#permission">権限について</a></li>
+      <li><a href="#third-party">第三者提供・広告・解析</a></li>
+      <li><a href="#children">子どものプライバシー</a></li>
+      <li><a href="#delete">データの削除方法</a></li>
+      <li><a href="#changes">本ポリシーの変更</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ol>
+  </nav>
+
+  <section id="intro">
+    <h2><span class="num">1</span>はじめに</h2>
+    <p>
+      「株主優待マネージャー」(以下「本アプリ」)は、利用者が保有する株式の株主優待情報を個人で整理・管理するためのAndroidアプリです。本ポリシーは、本アプリの利用にあたって取り扱う情報の内容と、その取り扱い方針について説明するものです。
+    </p>
+  </section>
+
+  <section id="collect">
+    <h2><span class="num">2</span>収集する情報について</h2>
+    <p>
+      本アプリはインターネット接続を必要とせず、通信機能そのものを持ちません。そのため、氏名・メールアドレスなどの個人情報、端末識別子、位置情報、利用状況ログなど、いかなる情報も外部のサーバーへ送信・収集することはありません。
+    </p>
+  </section>
+
+  <section id="store">
+    <h2><span class="num">3</span>端末内に保存される情報</h2>
+    <p>本アプリの利用にあたり、以下の情報は<strong>端末内にのみ</strong>保存されます。これらの情報が本アプリの外部(開発者を含む)に送信されることはありません。</p>
+    <ul>
+      <li>登録した銘柄情報(証券コード、銘柄名、保有株数、取得年月、メモ)</li>
+      <li>優待内容の情報(カテゴリ、期限、使用済みフラグ、権利確定月、継続保有必要月数、メモ)</li>
+      <li>ホーム画面の背景として選択した画像(端末のギャラリーから選択し、本アプリの内部ストレージにコピーされたもの)</li>
+    </ul>
+    <p class="muted">これらはすべてAndroidの標準的なアプリ内データベース・内部ストレージの仕組みを用いて端末上に保存されます。</p>
+  </section>
+
+  <section id="permission">
+    <h2><span class="num">4</span>権限について</h2>
+    <p>
+      背景画像の選択には、Androidの「フォトピッカー」機能を使用しています。この方式では、写真ライブラリ全体へのアクセス許可(ストレージ権限)を本アプリに付与する必要がなく、利用者が選んだ1枚の画像のみが本アプリに渡されます。本アプリはこれ以外のシステム権限を要求しません。
+    </p>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="num">5</span>第三者提供・広告・解析</h2>
+    <p>
+      本アプリには、広告SDK、アクセス解析(アナリティクス)、クラッシュレポートツールなど、いかなる第三者ライブラリも組み込まれていません。利用者の情報を第三者に提供・共有することはありません。
+    </p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">6</span>子どものプライバシー</h2>
+    <p>
+      本アプリは特定の年齢層を対象としたものではなく、子どもを含むいかなる利用者からも情報を収集しません。
+    </p>
+  </section>
+
+  <section id="delete">
+    <h2><span class="num">7</span>データの削除方法</h2>
+    <p>
+      端末内に保存されたすべてのデータは、以下のいずれかの方法で完全に削除できます。
+    </p>
+    <ul>
+      <li>本アプリをアンインストールする</li>
+      <li>Androidの「設定」→「アプリ」→「株主優待マネージャー」→「ストレージとキャッシュ」から「ストレージを消去」を行う</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">8</span>本ポリシーの変更</h2>
+    <p>
+      本ポリシーの内容は、法令の変更や本アプリの機能追加に伴い、予告なく改定される場合があります。重要な変更を行った場合は、本ページ上部の最終更新日を更新してお知らせします。
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">9</span>お問い合わせ</h2>
+    <p>本アプリおよび本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
+  </section>
+
+  <div class="ticket-rule"></div>
+
+  <footer>
+    <div class="contact-box">
+      開発者:Ken<br>
+      お問い合わせ先:<a href="mailto:ken108400@gmail.com">ken108400@gmail.com</a>
+    </div>
+    <p>株主優待マネージャー プライバシーポリシー — 2026年9月19日制定</p>
+  </footer>
+</main>
